@@ -1,0 +1,7 @@
+# LaTeX
+*.ps
+
+# asm
+Mchmod
+*.o
+fichier*
