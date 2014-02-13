@@ -1,0 +1,43 @@
+#!/bin/bash
+#NOM    : Demo
+#CLASSE : FS - FS078
+#OBJET  : réservé au makefile
+#AUTEUR	: Bruno Parmentier, 02/2014
+C='\033[44m'
+E='\033[32m\033[1m'
+N='\033[0m'
+clear
+
+
+echo "Commande chmod écrite en assembleur : Mchmod"
+echo "--------------------------------------------------------"
+echo "Création de trois fichiers : fichier1, fichier2 et fichier3"
+touch fichier{1,2,3}
+echo "Permissions initiales : 644"
+chmod 644 fichier*
+echo -e "Exécution de ${E}ls -l fichier*${N} :"
+ls -l fichier*
+echo
+echo ------------------------------
+echo -e "Exécution de ${E}./Mchmod${N} :"
+./Mchmod
+echo
+echo ------------------------------
+echo -e "Exécution de ${E}./Mchmod 666 fichierinconnu${N} :"
+./Mchmod 666 fichierinconnu
+echo
+echo ------------------------------
+echo -e "Exécution de ${E}./Mchmod 755 fichier1${N} :"
+./Mchmod 755 fichier1
+echo
+echo -e "Exécution de ${E}ls -l fichier*${N} :"
+ls -l fichier*
+echo
+echo ------------------------------
+echo -e "Exécution de ${E}Mchmod 600 fichier2 fichier3${N} :"
+./Mchmod 600 fichier2 fichier3
+echo
+echo -e "Exécution de ${E}ls -l fichier*${N} :"
+ls -l fichier*
+echo
+echo ------------------------------
