@@ -19,6 +19,6 @@ correspondante dans le Makefile.
 `Mchmod` prend le mode au format octal en premier argument, puis une liste de
 chemins de fichiers comme arguments suivants.
 
-Dépendences
+Dépendances
 -----------
 nasm, ld, latex, gv
