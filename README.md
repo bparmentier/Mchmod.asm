@@ -1,6 +1,9 @@
 Mchmod.asm
 ==========
 
+Haute École de Bruxelles - École Supérieure d'Informatique
+Projet FS078 - Systèmes d'exploitation - 2013-2014
+
 Simple implémentation de la commande chmod en assembleur x86.
 
 Usage
